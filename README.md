@@ -38,11 +38,11 @@ filings = EdgarApi::Filing.pull(count: "100")
 #to pull 100 most recent filings for specific CIK or ticker
 filings = EdgarApi::Filing.pull(cik: "0000320193", count: "100")
 
-#to pull most recent filings for a specific form type
+#to pull 40 most recent filings for a specific form type
 filings = EdgarApi::Filing.pull(type: "C/A")
 
-#to pull most recent filings by company name
-filings = EdgarApi::Filing.pull(type: "C/A")
+#to pull 40 most recent filings by company name
+filings = EdgarApi::Filing.pull(compant: "apple")
 
 ```
 
